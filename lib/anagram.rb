@@ -6,6 +6,6 @@ class Anagram
   end
 
   def match(array)
-    array.select { |anagram| anagram == self.word }
+    array.select { |anagram| anagram.sort == word.sort }
   end
 end
